@@ -1,5 +1,5 @@
 # Eloquent Javascript, 3rd Edition: A modern Introduction to programming
-An overview, with solution and explanation of exercises in chapter eleven of the ebook Eloquent Javascript, 3rd Edition by Marijn Haverbeke
+An overview, with solution and explanation of exercises in chapter eleven of the ebook [Eloquent Javascript, 3rd Edition](https://eloquentjavascript.net/Eloquent_JavaScript.pdf) by Marijn Haverbeke
 
 ## Overview
 ### Chapter Eleven: Asynchronous Programming
@@ -8,7 +8,7 @@ In a **synchronous programming model**, things happen one at a time ( single thr
 Javascript at it's base is synchronous but it's programming platforms-Browsers and Node.js make operations that take a while asynchronous, rather than relying on threads. Since programming with threads is notoriously hard (understanding what a program does is much more difficult when it’s doing multiple things at once), this is generally considered a good thing.
 
 #### Crow Tech
-For this chapter, The author worked with a small project built to mimick a network of crow nests that communicate with each other. This project was introduced to help us better understand some asynchronous programming concepts in javascript. You can take a look at the [crow-tech.js](https://eloquentjavascript.net/code/crow-tech.js) file. 
+For this chapter, The author worked with a small project built to mimick a network of crow nests that communicate with each other. This project was introduced to help us better understand some asynchronous programming concepts in javascript. You can take a look at the [crow-tech.js](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_11_asyncJS/blob/main/crow-tech.js) file. 
 
 This file contains an immediately invoked function expression that abstracts a few things and exposes an interface with 3 items (bound to exports)
 ```javascript
@@ -785,7 +785,7 @@ async function chicks(nest, year) {
 ```
 ## Exercises
 ### Chapter Eleven: Asynchronous programming
-* 11.1 Tracking the scalpel
+* 11.1 [Tracking the scalpel](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_11_asyncJS/blob/main/chapter%2011%20exercises/trackingScalpel.js)
 
 The village crows own an old scalpel that they occasionally use on special missions—say, to cut through screen doors or packaging. To be able to quickly track it down, every time the scalpel is moved to another nest, an entry is added to the storage of both the nest that had it and the nest that took it, under the name "scalpel", with its new location as the value.
 This means that finding the scalpel is a matter of following the breadcrumb trail of storage entries, until you find a nest where that points at the nest itself. 
@@ -829,7 +829,7 @@ When a request fails, say for example if i forgot to define a handler for "stora
 
 For the first implementation without `async`/`await`, If the request fails and throws an exception, it is also returned as a rejected promise and the `then` method is totally ignored. So it works the same as the `async` version
 
-* 11.2 Building Promise.all
+* 11.2 [Building Promise.all](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_11_asyncJS/blob/main/chapter%2011%20exercises/buildingPromiseAll.js)
 
 For this exercise, i was tasked to implement the `Promise.all` function as a regular function called `Promise_all`.
 
